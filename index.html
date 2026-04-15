@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica Privada Miranda V - Atención oftalmológica integral en San Pedro de Jujuy. Dra. Alejandra Miranda, especialista en salud visual.">
+    <meta name="keywords" content="oftalmología, clínica ocular, Dra. Alejandra Miranda, San Pedro de Jujuy, salud visual">
+    <title>Clínica Privada Miranda V | Oftalmología Premium en San Pedro de Jujuy</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        accent: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans antialiased text-slate-700 bg-white overflow-x-hidden">
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/543888651475?text=Hola,%20me%20gustaría%20solicitar%20un%20turno" 
+       target="_blank" 
+       rel="noopener" 
+       class="whatsapp-btn"
+       aria-label="Contactar por WhatsApp">
+        <i class="ri-whatsapp-line"></i>
+        <span class="tooltip">¡Escríbenos!</span>
+    </a>
+
+    <!-- Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
+        <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-500/30 group-hover:shadow-primary-500/50 transition-all duration-300 group-hover:scale-105">
+                        <i class="ri-eye-line text-white text-2xl"></i>
+                    </div>
+                    <div class="hidden sm:block">
+                        <span class="text-xl font-bold text-slate-800">Miranda V</span>
+                        <span class="block text-xs text-slate-500 font-medium -mt-1">Clínica Oftalmológica</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#estudios" class="nav-link">Estudios</a>
+                    <a href="#experiencia" class="nav-link">Experiencia</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="tel:+543888651475" class="flex items-center gap-2 text-slate-600 hover:text-primary-600 transition-colors">
+                        <i class="ri-phone-line"></i>
+                        <span class="font-medium">+54 388 8651475</span>
+                    </a>
+                    <a href="https://wa.me/543888651475?text=Hola,%20me%20gustaría%20solicitar%20un%20turno" 
+                       target="_blank" 
+                       rel="noopener"
+                       class="btn-primary-gradient">
+                        <i class="ri-whatsapp-line"></i>
+                        Solicitar Turno
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center hover:bg-slate-200 transition-colors" aria-label="Abrir menú">
+                    <i class="ri-menu-line text-2xl text-slate-700"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white/95 backdrop-blur-xl border-t border-slate-200/50 shadow-2xl">
+            <div class="px-6 py-6 space-y-4">
+                <a href="#inicio" class="mobile-nav-link">Inicio</a>
+                <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+                <a href="#servicios" class="mobile-nav-link">Servicios</a>
+                <a href="#estudios" class="mobile-nav-link">Estudios</a>
+                <a href="#experiencia" class="mobile-nav-link">Experiencia</a>
+                <a href="#contacto" class="mobile-nav-link">Contacto</a>
+                <div class="pt-4 border-t border-slate-200">
+                    <a href="https://wa.me/543888651475?text=Hola,%20me%20gustaría%20solicitar%20un%20turno" 
+                       target="_blank" 
+                       rel="noopener"
+                       class="btn-primary-gradient w-full justify-center">
+                        <i class="ri-whatsapp-line"></i>
+                        Solicitar Turno
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-600"></div>
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primary-400 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent-400 rounded-full blur-3xl"></div>
+        </div>
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.03\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-1/4 left-10 floating">
+            <div class="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                <i class="ri-eye-line text-white/80 text-3xl"></i>
+            </div>
+        </div>
+        <div class="absolute top-1/3 right-20 floating-delayed">
+            <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                <i class="ri-focus-line text-white/80 text-2xl"></i>
+            </div>
+        </div>
+        <div class="absolute bottom-1/4 left-1/4 floating-delayed-2">
+            <div class="w-24 h-24 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
+                <i class="ri-heart-pulse-line text-white/80 text-4xl"></i>
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8" data-aos="fade-down">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span class="text-white/90 text-sm font-medium">Atención personalizada</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+                Cuidamos tu<br>
+                <span class="bg-gradient-to-r from-accent-300 to-white bg-clip-text text-transparent">salud visual</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                Atención oftalmológica integral para toda la familia<br class="hidden md:block">
+                con la Dra. Alejandra Miranda
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://wa.me/543888651475?text=Hola,%20me%20gustaría%20solicitar%20un%20turno" 
+                   target="_blank" 
+                   rel="noopener"
+                   class="group btn-whatsapp">
+                    <i class="ri-whatsapp-line text-2xl"></i>
+                    <span>Solicitar turno</span>
+                    <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="#servicios" class="btn-outline-white">
+                    <span>Conocer servicios</span>
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">Años de experiencia</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="5000">0</div>
+                    <div class="stat-label">Pacientes atendidos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="12">0</div>
+                    <div class="stat-label">Estudios disponibles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="6">0</div>
+                    <div class="stat-label">Servicios especializados</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+            <a href="#nosotros" class="flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors">
+                <span class="text-sm font-medium">Descubre más</span>
+                <div class="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2">
+                    <div class="w-1.5 h-3 bg-white/60 rounded-full animate-bounce"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-24 lg:py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <!-- Image Side -->
+                <div class="relative" data-aos="fade-right">
+                    <div class="relative z-10">
+                        <div class="aspect-square max-w-md mx-auto rounded-3xl bg-gradient-to-br from-primary-500 to-primary-700 p-1 shadow-2xl shadow-primary-500/30">
+                            <div class="w-full h-full rounded-3xl bg-slate-100 flex items-center justify-center overflow-hidden">
+                                <div class="text-center">
+                                    <div class="w-40 h-40 mx-auto rounded-full bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center mb-6 shadow-xl">
+                                        <i class="ri-user-smile-line text-white text-6xl"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-slate-800 mb-2">Dra. Alejandra Miranda</h3>
+                                    <p class="text-primary-600 font-semibold">Médica Oftalmóloga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-accent-400/20 rounded-full blur-2xl"></div>
+                    <div class="absolute -bottom-6 -left-6 w-40 h-40 bg-primary-400/20 rounded-full blur-2xl"></div>
+                    
+                    <!-- Experience Badge -->
+                    <div class="absolute -right-4 lg:right-8 bottom-1/4 bg-white rounded-2xl p-4 shadow-xl z-20" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
+                                <i class="ri-vip-diamond-line text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-slate-800">+15</div>
+                                <div class="text-sm text-slate-500">Años de experiencia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-semibold mb-6">
+                        <i class="ri-heart-line"></i>
+                        Sobre nosotros
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6 leading-tight">
+                        Tu salud visual<br>
+                        <span class="text-primary-600">en las mejores manos</span>
+                    </h2>
+                    
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        En la <strong>Clínica Privada Miranda V</strong>, nos comprometemos con la salud visual de toda tu familia. La Dra. Alejandra Miranda ofrece atención integral y personalizada, desde los más pequeños hasta los adultos mayores.
+                    </p>
+                    
+                    <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                        Con años de experiencia y formación continua, brindamos diagnósticos precisos y tratamientos efectivos en un ambiente cálido, profesional y使用了最先进的设备。
+                    </p>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-2 gap-4 mb-10">
+                        <div class="flex items-center gap-3 p-4 rounded-xl bg-white shadow-sm">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                                <i class="ri-baby-line text-primary-600"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Bebés</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 rounded-xl bg-white shadow-sm">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                                <i class="ri-team-line text-primary-600"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Niños</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 rounded-xl bg-white shadow-sm">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                                <i class="ri-user-line text-primary-600"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Adultos</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-4 rounded-xl bg-white shadow-sm">
+                            <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                                <i class="ri-parent-line text-primary-600"></i>
+                            </div>
+                            <span class="font-semibold text-slate-700">Adultos mayores</span>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors group">
+                        <span>Agenda tu consulta</span>
+                        <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-100 text-accent-600 text-sm font-semibold mb-6">
+                    <i class="ri-service-line"></i>
+                    Nuestros servicios
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+                    Servicios oftalmológicos<br>
+                    <span class="text-primary-600">de excelencia</span>
+                </h2>
+                <p class="text-lg text-slate-600">
+                    Ofrecemos una amplia gama de servicios para el cuidado integral de tu salud visual
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card group" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-icon">
+                        <i class="ri-search-eye-line"></i>
+                    </div>
+                    <h3 class="service-title">Consulta oftalmológica completa</h3>
+                    <p class="service-description">Evaluación integral de la salud visual con diagnóstico preciso y tratamiento personalizado.</p>
+                    <div class="service-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="ri-baby-line"></i>
+                    </div>
+                    <h3 class="service-title">Control de niño sano</h3>
+                    <p class="service-description">Revisiones oftalmológicas especializadas para el desarrollo visual de los más pequeños.</p>
+                    <div class="service-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="ri-siren-line"></i>
+                    </div>
+                    <h3 class="service-title">Urgencias oftalmológicas</h3>
+                    <p class="service-description">Atención inmediata para casos que requieren pronta intervención y diagnóstico.</p>
+                    <div class="service-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="ri-flashlight-line"></i>
+                    </div>
+                    <h3 class="service-title">Tratamiento láser</h3>
+                    <p class="service-description">Tecnología láser avanzada para retinopatía diabética y otras condiciones.</p>
+                    <div class="service-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="ri-knife-line"></i>
+                    </div>
+                    <h3 class="service-title">Cirugía oftalmológica</h3>
+                    <p class="service-description">Cirugías de cataratas, pterigión y chalazión con técnicas avanzadas.</p>
+                    <div class="service-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="ri-medicine-bottle-line"></i>
+                    </div>
+                    <h3 class="service-title">Inyecciones intravítreas</h3>
+                    <p class="service-description">Tratamientos especializados para enfermedades de la retina.</p>
+                    <div class="service-arrow">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Studies Section -->
+    <section id="estudios" class="py-24 lg:py-32 bg-gradient-to-br from-slate-900 via-primary-900 to-slate-900 relative overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-500 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm font-semibold mb-6 backdrop-blur-sm">
+                    <i class="ri-microscope-line"></i>
+                    Estudios diagnósticos
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Tecnología de<br>
+                    <span class="bg-gradient-to-r from-accent-300 to-primary-300 bg-clip-text text-transparent">última generación</span>
+                </h2>
+                <p class="text-lg text-white/70">
+                    Contamos con equipamiento de avanzada para diagnósticos precisos y confiables
+                </p>
+            </div>
+
+            <!-- Studies Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+                <div class="study-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="ri-speed-line"></i>
+                    <span>Tonometría</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="50">
+                    <i class="ri-computer-line"></i>
+                    <span>Refracción computarizada</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="ri-eye-line"></i>
+                    <span>Fondo de ojo</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="150">
+                    <i class="ri-microscope-line"></i>
+                    <span>Biomicroscopía</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="ri-grid-line"></i>
+                    <span>Campimetría</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="250">
+                    <i class="ri-stack-line"></i>
+                    <span>OCT mácula y nervio óptico</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="ri-broadcast-line"></i>
+                    <span>OCT segmento anterior</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="350">
+                    <i class="ri-camera-line"></i>
+                    <span>Retinografía</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="ri-topology-line"></i>
+                    <span>Topografía corneal</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="450">
+                    <i class="ri-waves-line"></i>
+                    <span>Ecometría</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="ri-tv-2-line"></i>
+                    <span>Ecografía ocular</span>
+                </div>
+                <div class="study-card" data-aos="fade-up" data-aos-delay="550">
+                    <i class="ri-ruler-line"></i>
+                    <span>Paquimetría</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="experiencia" class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content -->
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-100 text-accent-600 text-sm font-semibold mb-6">
+                        <i class="ri-play-circle-line"></i>
+                        Conocé la clínica
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+                        Nuestras instalaciones<br>
+                        <span class="text-primary-600">y tecnología</span>
+                    </h2>
+                    
+                    <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                        Te invitamos a conocer nuestras modernas instalaciones y el equipamiento de última generación con el que contamos para brindarte la mejor atención oftalmológica en San Pedro de Jujuy.
+                    </p>
+
+                    <!-- Features List -->
+                    <div class="space-y-4 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="ri-check-line text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800 mb-1">Equipamiento moderno</h4>
+                                <p class="text-slate-600">Tecnología de última generación para diagnósticos precisos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="ri-check-line text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800 mb-1">Ambiente confortable</h4>
+                                <p class="text-slate-600">Espacios diseñados para tu comodidad y tranquilidad.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="ri-check-line text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800 mb-1">Atención personalizada</h4>
+                                <p class="text-slate-600">Nos enfocamos en vos y tus necesidades visuales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contacto" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-600 text-white font-semibold hover:bg-primary-700 transition-colors shadow-lg shadow-primary-600/30">
+                        <span>Agenda tu visita</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <!-- Video -->
+                <div class="relative" data-aos="fade-left">
+                    <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-primary-500/20 bg-slate-900">
+                        <iframe 
+                            src="https://drive.google.com/file/d/1DX8ZWxO2F5vwLC2kMbXFX6OP6Z9A8E_q/preview"
+                            class="w-full h-full"
+                            title="Video institucional Clínica Miranda V"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-400 rounded-full blur-xl opacity-60"></div>
+                    <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary-400 rounded-full blur-xl opacity-60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="py-24 lg:py-32 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-100 text-primary-700 text-sm font-semibold mb-6">
+                    <i class="ri-map-pin-line"></i>
+                    Dónde estamos
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+                    Visitanos en<br>
+                    <span class="text-primary-600">San Pedro de Jujuy</span>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Info Cards -->
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="info-card" data-aos="fade-right" data-aos-delay="0">
+                        <div class="info-icon">
+                            <i class="ri-map-pin-2-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Dirección</h3>
+                            <p>Miguel Aráoz 425</p>
+                            <p class="text-primary-600 font-medium">San Pedro de Jujuy, Argentina</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="info-icon">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfono</h3>
+                            <a href="tel:+543888651475" class="text-primary-600 font-bold text-xl hover:text-primary-700 transition-colors">
+                                +54 388 8651475
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="info-icon">
+                            <i class="ri-time-line"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horarios</h3>
+                            <p>Lunes a Viernes: 8:00 - 20:00</p>
+                            <p>Sábados: 8:00 - 13:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="lg:col-span-2" data-aos="fade-left">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl h-full min-h-[400px]">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.5!2d-64.86!3d-24.23!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDEzJzQ3LjAiUyA2NMKwNTEnMzUuMiJX!5e0!3m2!1ses!2sar!4v1234567890"
+                            class="w-full h-full min-h-[400px]"
+                            title="Ubicación Clínica Miranda V"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Left - Info -->
+                <div data-aos="fade-right">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-100 text-accent-600 text-sm font-semibold mb-6">
+                        <i class="ri-contacts-line"></i>
+                        Contacto
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+                        Estamos para<br>
+                        <span class="text-primary-600">ayudarte</span>
+                    </h2>
+                    
+                    <p class="text-lg text-slate-600 mb-10">
+                        Completá el formulario y nos pondremos en contacto a la brevedad. También podés comunicarte directamente por WhatsApp o teléfono.
+                    </p>
+
+                    <!-- Contact Methods -->
+                    <div class="space-y-6 mb-10">
+                        <a href="https://wa.me/543888651475" target="_blank" rel="noopener" class="contact-method">
+                            <div class="contact-icon whatsapp">
+                                <i class="ri-whatsapp-line"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>WhatsApp</h4>
+                                <p>+54 388 8651475</p>
+                            </div>
+                            <i class="ri-arrow-right-s-line text-slate-400"></i>
+                        </a>
+
+                        <a href="tel:+543888651475" class="contact-method">
+                            <div class="contact-icon phone">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Teléfono</h4>
+                                <p>+54 388 8651475</p>
+                            </div>
+                            <i class="ri-arrow-right-s-line text-slate-400"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=61584065126397" target="_blank" rel="noopener" class="contact-method">
+                            <div class="contact-icon facebook">
+                                <i class="ri-facebook-circle-line"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Facebook</h4>
+                                <p>Clínica Miranda V</p>
+                            </div>
+                            <i class="ri-arrow-right-s-line text-slate-400"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right - Form -->
+                <div data-aos="fade-left">
+                    <div class="bg-slate-50 rounded-3xl p-8 lg:p-10 shadow-xl">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6">Envianos un mensaje</h3>
+                        
+                        <form id="contactForm" class="space-y-6">
+                            <div class="form-group">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input 
+                                    type="text" 
+                                    id="nombre" 
+                                    name="nombre" 
+                                    required 
+                                    placeholder="Tu nombre"
+                                    class="form-input"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input 
+                                    type="tel" 
+                                    id="telefono" 
+                                    name="telefono" 
+                                    required 
+                                    placeholder="Tu número de teléfono"
+                                    class="form-input"
+                                >
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensaje" class="form-label">Mensaje (opcional)</label>
+                                <textarea 
+                                    id="mensaje" 
+                                    name="mensaje" 
+                                    rows="4" 
+                                    placeholder="¿En qué podemos ayudarte?"
+                                    class="form-input resize-none"
+                                ></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-submit w-full">
+                                <i class="ri-send-plane-line"></i>
+                                <span>Enviar mensaje</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 lg:py-32 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-400 rounded-full blur-3xl opacity-30"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-400 rounded-full blur-3xl opacity-30"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10" data-aos="zoom-in">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                Tu visión es<br>
+                <span class="text-accent-300">nuestra prioridad</span>
+            </h2>
+            
+            <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+                No esperes más para cuidar tus ojos. Agenda tu turno hoy mismo y comenzá a ver el mundo con claridad.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/543888651475?text=Hola,%20me%20gustaría%20solicitar%20un%20turno" 
+                   target="_blank" 
+                   rel="noopener"
+                   class="btn-whatsapp-hero">
+                    <i class="ri-whatsapp-line text-2xl"></i>
+                    <span>Reservar turno ahora</span>
+                </a>
+                <a href="tel:+543888651475" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold hover:bg-white/20 transition-colors">
+                    <i class="ri-phone-line"></i>
+                    <span>Llamar ahora</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center">
+                            <i class="ri-eye-line text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-bold">Miranda V</span>
+                            <span class="block text-xs text-slate-400 -mt-1">Clínica Oftalmológica</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Clínica oftalmológica comprometida con tu salud visual. Atención integral para toda la familia en San Pedro de Jujuy.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="https://www.facebook.com/profile.php?id=61584065126397" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="https://wa.me/543888651475" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Enlaces rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="footer-link">Inicio</a></li>
+                        <li><a href="#nosotros" class="footer-link">Nosotros</a></li>
+                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#estudios" class="footer-link">Estudios</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Servicios</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#servicios" class="footer-link">Consulta oftalmológica</a></li>
+                        <li><a href="#servicios" class="footer-link">Cirugía oftalmológica</a></li>
+                        <li><a href="#servicios" class="footer-link">Tratamiento láser</a></li>
+                        <li><a href="#estudios" class="footer-link">Estudios diagnósticos</a></li>
+                        <li><a href="#servicios" class="footer-link">Urgencias</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contacto</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-map-pin-line text-primary-400 mt-1"></i>
+                            <span class="text-slate-400">Miguel Aráoz 425<br>San Pedro de Jujuy, Argentina</span>
+                        </li>
+                        <li>
+                            <a href="tel:+543888651475" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
+                                <i class="ri-phone-line text-primary-400"></i>
+                                <span>+54 388 8651475</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61584065126397" target="_blank" rel="noopener" class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors">
+                                <i class="ri-facebook-circle-line text-primary-400"></i>
+                                <span>Clínica Miranda V</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-slate-800 pt-8 text-center">
+                <p class="text-slate-500 text-sm">
+                    © 2024 Clínica Privada Miranda V. Todos los derechos reservados.
+                </p>
+                <p class="text-slate-600 text-xs mt-2">
+                    San Pedro de Jujuy, Argentina
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
