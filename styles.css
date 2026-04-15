@@ -47,6 +47,22 @@
     border-radius: 8px;
 }
 
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
 #navbar.scrolled .nav-link {
     color: var(--slate-600);
 }
@@ -58,7 +74,11 @@
 
 #navbar.scrolled .nav-link:hover {
     color: var(--primary-600);
-    background: var(--primary-50);
+    background: transparent;
+}
+
+#navbar.scrolled .nav-link::after {
+    background: var(--primary-600);
 }
 
 .mobile-nav-link {
